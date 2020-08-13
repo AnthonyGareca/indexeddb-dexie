@@ -71,11 +71,3 @@ if ('indexedDB' in window) {
       }
     });
 }
-
-  // readAllData('items')
-  //   .then(function (data) {
-  //     if (!networkDataReceived) {
-  //       console.log('From idb', data)
-  //       updateUI(data)
-  //     }
-  //   });

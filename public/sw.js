@@ -1,6 +1,4 @@
 importScripts('https://unpkg.com/dexie@3.0.2/dist/dexie.js');
-importScripts('/js/idb.js');
-importScripts('/js/db-utils.js');
 importScripts('./js/dixie-utils.js');
 
 let STATIC_CACHE = 'static-v3'
@@ -15,8 +13,6 @@ let STATIC_FILES = [
   '/js/add.js',
   '/js/promise.js',
   '/js/fetch.js',
-  '/js/idb.js',
-  '/js/db-utils.js',
   '/js/dixie-utils.js',
   '/icons/icon-16x16.png',
   '/icons/icon-32x32.png',

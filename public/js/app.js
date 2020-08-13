@@ -10,7 +10,7 @@ if ('serviceWorker' in navigator) {
     .then(function (registration) {
       console.log('SW registered and scope: ', registration.scope);
     })
-    .catch(function(err) {
+    .catch(function (err) {
       console.log(err)
     });
 
@@ -22,32 +22,25 @@ let deferredPrompt;
 
 
 function doInstall() {
-    console.log('doInstall')
-    installButton.style.display = 'none'
-    deferredPrompt.prompt()
-    deferredPrompt.userChoice.then(res => {
-    /*  if (res.outcome === 'accepted') {
-          console.log('doInstall: accepted');
-      } else {
-           console.log('doInstall: declined');
-      }
-    */
-      deferredPrompt = null
-    })
+  console.log('doInstall')
+  installButton.style.display = 'none'
+  deferredPrompt.prompt()
+  deferredPrompt.userChoice.then(res => {
+    deferredPrompt = null
+  })
 }
 
 installButton.onclick = doInstall;
 
 
 window.addEventListener('beforeinstallprompt', event => {
-    // console.log('Event: beforeinstallprompt')
-    event.preventDefault();
-    deferredPrompt = event;
-    installButton.style.display = 'block';
+  event.preventDefault();
+  deferredPrompt = event;
+  installButton.style.display = 'block';
 });
 
 window.addEventListener('appinstalled', event => {
-    console.log('App Installed');
+  console.log('App Installed');
 });
 
-//---------- End Install app
+// End Install app
