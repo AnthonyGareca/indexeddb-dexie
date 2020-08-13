@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="app.webmanifest">
+  <link rel="stylesheet" href="css/w3.css">
+
+  <link rel="icon" type="image/png" href="/icons/icon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/icons/icon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/icons/icon-192x192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/icons/icon-512x512.png" sizes="512x512">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/dexie@latest/dist/dexie.js"></script>
+  <title>The best pictures ever!!!</title>
+</head>
+
+<body>
+
+  <div class="w3-container w3-teal w3-mobile">
+    <h1>The best pictures ever!!!</h1>
+    <button id='installButton' class="w3-circle w3-orange w3-display-topright">Install</button>
+  </div>
+
+  <div id="pictures" class="w3-content w3-mobile">
+  </div>
+
+  <div w3-container w3-teal w3-mobile>
+    <button id="add" class="w3-button w3-red">Add</button>
+  </div>
+
+  <script src="./js/promise.js"></script>
+  <script src="./js/fetch.js"></script>
+  <script src="./js/idb.js"></script>
+  <script src="./js/db-utils.js"></script>
+  <script src="https://unpkg.com/dexie@3.0.2/dist/dexie.js"></script>
+  <script src="./js/dixie-utils.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/add.js"></script>
+</body>
+
+</html>

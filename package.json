@@ -1,0 +1,21 @@
+{
+  "name": "pwa-install",
+  "version": "1.0.0",
+  "description": "pwa install sample",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -c-1 -p 3030"
+  },
+  "keywords": [
+    "pwa",
+    "install"
+  ],
+  "author": "",
+  "license": "",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  },
+  "dependencies": {
+    "dexie": "^3.0.2"
+  }
+}
